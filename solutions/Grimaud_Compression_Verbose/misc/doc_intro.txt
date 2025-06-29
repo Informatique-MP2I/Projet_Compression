@@ -1,0 +1,18 @@
+This documentation provides an internal description of the source code used for
+the algorithms implemented in this project, including Huffman and
+Lempel-Ziv-Welch (LZW) methods. The project is developed in OCaml and includes
+various tools for processing and analyzing binary files.
+
+The project consists of the following five executables:
+
+- `compresslzw` and `decompresslzw` for compression and decompression using the Lempel-Ziv-Welch algorithm.
+- `compresshuffman` and `decompresshuffman` for compression and decompression using the Huffman algorithm.
+- A utility program `dumpbits` to display the contents of a file bit by bit.
+
+
+The project also relies on the use of two internal modules:
+
+- `BitChannel` which allows reading and writing files bit by bit.
+- `PriorityQueue` which implements a priority queue using a binary heap.
+
+
